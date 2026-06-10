@@ -124,59 +124,90 @@ using namespace std;
 //	Stack sk1;
 //	Stack sk2(sk1);
 //}
-class Date
+//class Date
+//{
+//public:
+//	//构造函数，初始化，函数体内赋值
+//	Date(int year = 0, int month = 1, int day = 1)
+//	{
+//		_year = year;
+//		_month = month;
+//		_day = day;
+//		printf("调用了构造函数\n");
+//	}
+//	Date(int year = 0, int month = 1, int day = 1)
+//		:_year(year),
+//		_month(month)
+//		, _day(day)
+//	{
+//		//初始化列表
+//	}
+//	//析构函数，销毁
+//	~Date()
+//	{
+//		printf("调用了析构函数\n");
+//	}
+//	//拷贝函数
+//	Date(const Date& d)
+//	{
+//		_year = d._year;
+//		_month = d._month;
+//		_day = d._day;
+//		printf("调用了拷贝函数\n");
+//	}
+//	//运算符重载
+//	//d3=d1转化为d3.operator=(d1)
+//	Date& operator=(const Date& d)
+//	{
+//		if (this == &d)
+//			return *this;
+//		_year = d._year;
+//		_month = d._month;
+//		_day = d._day;
+//		printf("调用了运算符重载\n");
+//		return *this;
+//	}
+//	void print()
+//	{
+//		cout << _year;
+//		cout << _month;
+//		cout << _day << endl;
+//	}
+//private:
+//	int _year;
+//	int _month;
+//	int _day;
+//};
+//int main()
+//{
+//	Date d1(1, 1, 1);
+//	d1.print();
+//	Date d2(d1);
+//	d2.print();
+//	Date d3;
+//	d3 = d1;
+//}
+class A
 {
 public:
-	//构造函数，初始化
-	Date(int year = 0, int month = 1, int day = 1)
+	A(int a)
+		:_a1(a)
+		, _a2(_a1)
 	{
-		_year = year;
-		_month = month;
-		_day = day;
-		printf("调用了构造函数\n");
-	}
-	//析构函数，销毁
-	~Date()
-	{
-		printf("调用了析构函数\n");
-	}
-	//拷贝函数
-	Date(const Date& d)
-	{
-		_year = d._year;
-		_month = d._month;
-		_day = d._day;
-		printf("调用了拷贝函数\n");
-	}
-	//运算符重载
-	//d3=d1转化为d3.operator=(d1)
-	Date& operator=(const Date& d)
-	{
-		if (this == &d)
-			return *this;
-		_year = d._year;
-		_month = d._month;
-		_day = d._day;
-		printf("调用了运算符重载\n");
-		return *this;
+
 	}
 	void print()
 	{
-		cout << _year;
-		cout << _month;
-		cout << _day << endl;
+		cout << _a1 << " " << _a2 << endl;
 	}
 private:
-	int _year;
-	int _month;
-	int _day;
+	int _a2;
+	int _a1;
+	static int n;
 };
 int main()
 {
-	Date d1(1, 1, 1);
-	d1.print();
-	Date d2(d1);
-	d2.print();
-	Date d3;
-	d3 = d1;
+	A a(1);
+	a.print();
+	return 0;
 }
