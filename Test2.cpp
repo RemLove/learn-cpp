@@ -59,7 +59,7 @@ int& test03()
 //求1加到n
 class Sum
 {
-	friend void f(Sum& sum);
+	friend void f(Sum& sum);//友元，能在类外面访问private里面声明的变量>..<
 public:
 	void print()
 	{
@@ -73,6 +73,20 @@ void f(Sum& sum)
 {
 	sum.sum = 10;
 	cout << sum.sum << endl;
+}
+int func(int a = 10, int b = 20, int c = 30)
+{
+	return a + b + c;
+}
+int func2(int a = 10, int b = 10);
+int func2(int a, int b)
+{
+	return a + b;
+}
+//占位函数
+void func3(int a, int =10)
+{
+	cout << "func3" << endl;
 }
 int main()
 {
@@ -90,7 +104,7 @@ int main()
 	//test03() = 1000;//相当于a=1000
 	//cout << "a=" << ref << endl;
 	//cout << "a=" << ref << endl;
-	Sum sum;
-	f(sum);
+	func3(10,10);
+
 	return 0;
 }
