@@ -55,6 +55,25 @@ int& test03()
 	static int a = 10;
 	return a;
 }
+/////---------------------------------------------////////////////
+//求1加到n
+class Sum
+{
+	friend void f(Sum& sum);
+public:
+	void print()
+	{
+		cout << sum << endl;
+	}
+private://这里的变量都只是声明
+	static int  n;//静态的不行
+	 int sum=1;//给缺省值
+};
+void f(Sum& sum)
+{
+	sum.sum = 10;
+	cout << sum.sum << endl;
+}
 int main()
 {
 	/*int a = 10;
@@ -64,12 +83,14 @@ int main()
 	//swap01(a, b);//交换失败
 	//swap02(&a, &b);//交换成功
 	//swap03(a, b);//交换成功
-	int& ref = test03();
-	cout << "a=" << ref << endl;
-	cout << "a=" << ref << endl;
-	//引用做左值操作
-	test03() = 1000;//相当于a=1000
-	cout << "a=" << ref << endl;
-	cout << "a=" << ref << endl;
+	//int& ref = test03();
+	//cout << "a=" << ref << endl;
+	//cout << "a=" << ref << endl;
+	////引用做左值操作
+	//test03() = 1000;//相当于a=1000
+	//cout << "a=" << ref << endl;
+	//cout << "a=" << ref << endl;
+	Sum sum;
+	f(sum);
 	return 0;
 }
