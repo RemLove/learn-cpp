@@ -205,9 +205,9 @@ private:
 	int _a1;
 	static int n;
 };
-int main()
-{
-	A a(1);
-	a.print();
-	return 0;
-}
+//int main1()
+//{
+//	A a(1);
+//	a.print();
+//	return 0;
+//}
