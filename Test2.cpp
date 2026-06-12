@@ -1,4 +1,4 @@
-#include<iostream>
+ /*#include<iostream>
 using namespace std;
 void test01()
 {
@@ -90,8 +90,8 @@ void func3(int a, int =10)
 }
 int main()
 {
-	/*int a = 10;
-	int b = 20;*/
+	int a = 10;
+	int b = 20;
 	//test01();
 	//test02();
 	//swap01(a, b);//交换失败
@@ -104,7 +104,7 @@ int main()
 	//test03() = 1000;//相当于a=1000
 	//cout << "a=" << ref << endl;
 	//cout << "a=" << ref << endl;
-	func3(10,10);
+	//func3(10,10);
 	cout << "hello world!" << endl;
-	return 0;
-}
+	return 0;  
+}*/
