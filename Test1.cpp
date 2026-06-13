@@ -1,6 +1,6 @@
-﻿#include<iostream>
-using namespace std;
-#include <cstdio>
+﻿//#include<iostream>
+//using namespace std;
+//#include <cstdio>
 //
 //class Student
 //{
@@ -187,6 +187,7 @@ using namespace std;
 //	Date d3;
 //	d3 = d1;
 //}
+/*
 class A
 {
 public:
@@ -205,6 +206,7 @@ private:
 	int _a1;
 	static int n;
 };
+*/
 //int main1()
 //{
 //	A a(1);

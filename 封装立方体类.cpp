@@ -1,4 +1,5 @@
-#include<iostream>
+/*#include<iostream>
+#include <cstdlib>
 using namespace std;
 //立方体类设计
 //1.创建立方体类
@@ -61,12 +62,23 @@ bool IsSame(const Cube& c1,const Cube& c2)
 }
 int main()
 {
+	system("chcp 65001");
 	Cube c1(2, 2, 2);
 	c1.calculateS();
 	c1.calculateV();
-	Cube c2(1,1,1);
-	bool ret = IsSame(c1, c2);
-	if (ret)//如果为真
+	Cube c2(2,2,2);
+	bool ret1 = IsSame(c1, c2);
+	if (ret1)//如果为真
+	{
+		cout << "相等" << endl;
+	}
+	else
+	{
+		cout << "不相等" << endl;
+	}
+	Cube c3(2,2,2);
+	int ret2 = c3.IsSame2(c1);
+	if (ret2)//如果为真
 	{
 		cout << "相等" << endl;
 	}
@@ -76,4 +88,4 @@ int main()
 	}
 	system("pause");
 	return 0;
-}
+}*/

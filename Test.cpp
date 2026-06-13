@@ -1,4 +1,4 @@
-//#include<iostream>
+#include<iostream>
 //using namespace std;
 ////1.引用做参数
 //static void swap(int& a, int& b)
@@ -45,3 +45,25 @@
 //	b1 = c1;
 //	printf("%d", a1);
 //}
+template<class T>
+//template<typename A>
+void swap(T& a, T& b)
+{
+	T temp = a;
+	a = b;
+	b = temp;
+}
+int main()
+{
+	int a = 1;
+	int b = 2;
+	swap(a, b);
+	std::cout << a << std::endl;
+	std::cout << b << std::endl;
+
+	double c = 3.14;
+	double d = 5.21;
+	swap(c, d);
+	std::cout << c<< std::endl;
+	std::cout << d << std::endl;
+}
