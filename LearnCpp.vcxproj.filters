@@ -48,6 +48,15 @@
     <ClCompile Include="函数的分类以及调用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="成员变量和成员函数是分开存储的.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="this.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="成员函数做友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h">

@@ -45,7 +45,7 @@
 //	b1 = c1;
 //	printf("%d", a1);
 //}
-template<class T>
+/*template<class T>
 //template<typename A>
 void swap(T& a, T& b)
 {
@@ -66,4 +66,4 @@ int main()
 	swap(c, d);
 	std::cout << c<< std::endl;
 	std::cout << d << std::endl;
-}
+}*/

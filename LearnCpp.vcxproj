@@ -149,10 +149,13 @@
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Test1.cpp" />
     <ClCompile Include="Test2.cpp" />
+    <ClCompile Include="this.cpp" />
     <ClCompile Include="函数的分类以及调用.cpp" />
     <ClCompile Include="函数重载注意事项.cpp" />
     <ClCompile Include="封装的含义.cpp" />
     <ClCompile Include="封装立方体类.cpp" />
+    <ClCompile Include="成员函数做友元.cpp" />
+    <ClCompile Include="成员变量和成员函数是分开存储的.cpp" />
     <ClCompile Include="点和圆之间的关系.cpp" />
   </ItemGroup>
   <ItemGroup>
