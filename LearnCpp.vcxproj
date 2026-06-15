@@ -157,6 +157,7 @@
     <ClCompile Include="成员函数做友元.cpp" />
     <ClCompile Include="成员变量和成员函数是分开存储的.cpp" />
     <ClCompile Include="点和圆之间的关系.cpp" />
+    <ClCompile Include="运算符重载.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />

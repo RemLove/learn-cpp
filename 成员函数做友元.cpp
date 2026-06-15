@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 class House;
@@ -55,4 +55,4 @@ int main()
 	system("chcp 65001");
 	test();
 	return 0;
-}
+}*/
