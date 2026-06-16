@@ -150,6 +150,7 @@
     <ClCompile Include="Test1.cpp" />
     <ClCompile Include="Test2.cpp" />
     <ClCompile Include="this.cpp" />
+    <ClCompile Include="vector存放数据.cpp" />
     <ClCompile Include="函数的分类以及调用.cpp" />
     <ClCompile Include="函数重载注意事项.cpp" />
     <ClCompile Include="封装的含义.cpp" />

@@ -1,6 +1,7 @@
-#include<iostream>
+/*#include<iostream>
+#include<string>
 #include< cstdlib >
-/*
+
 //1.加号运算符做重载
 class Person
 {
@@ -52,7 +53,7 @@ void test01()
 {
 	Person p1(10, 10);
 	std::cout << p1 << std::endl;
-}*/
+}
 ///////////////////----------------------------------------/////////////
 //5.递增运算符重载
 class MyInterger
@@ -92,7 +93,7 @@ public:
 private:
 	int _num;
 };
-//重载左移运算符
+//6.重载左移运算符
 std::ostream& operator<<(std::ostream& cout, MyInterger myint)
 {
 	std::cout << myint._num;
@@ -126,8 +127,91 @@ void test05()
 	std::cout << myint-- << std::endl;
 	std::cout << myint << std::endl;
 }
+//7.赋值运算符重载
+class Person
+{
+public:
+	Person(std::string name,int age)
+	{
+		p_age = new int(age);
+		_name = name;
+	}
+	~Person()
+	{
+		if (p_age)
+		{
+			delete(p_age);
+			p_age = nullptr;
+		}
+	}
+	Person& operator=(Person& p)
+	{
+		if (p_age)
+		{
+			delete(p_age);
+			p_age = nullptr;
+		}
+		p_age = new int(*p.p_age);
+		return *this;
+	}
+	//关系运算符重载
+	bool operator==(Person&p)
+	{
+		if (this->_name == p._name && *this->p_age == *p.p_age)
+		{
+			return true;
+		}
+		return false;
+	}
+	bool operator!=(Person& p)
+	{
+
+		if (this->_name == p._name && *this->p_age == *p.p_age)
+		{
+			return false;
+		}
+		return true;
+	}
+	std::string _name;
+	int* p_age;
+
+};
+//赋值运算符重载
+void test06()
+{
+	//Person p1(10);
+	//Person p2(20);
+	//Person p3(30);
+	//p2 = p1 = p3;
+	//std::cout << *p2.p_age << std::endl;
+}
+//关系运算符重载
+void test07()
+{
+	Person p1("王越", 18);
+	Person p2("越王", 18);
+	if (p1 == p2)
+	{
+		std::cout << "相等" << std::endl;
+	}
+	else
+	{
+		std::cout << "不相等" << std::endl;
+	}
+	Person p3("王越", 18);
+	Person p4("王越", 18);
+	if (p3 != p4)
+	{
+		std::cout << "不相等" << std::endl;
+	}
+	else
+	{
+		std::cout << "相等" << std::endl;
+	}
+}
 int main()
 {
-	test05();
+	system("chcp 65001");
+	test07();
 	system("pause");
-}
+}*/
