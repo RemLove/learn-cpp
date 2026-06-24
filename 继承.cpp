@@ -84,7 +84,7 @@ void test03()
 	//Base1 s;
 	Son01 son;
 }
-*/
+
 class Base
 {
 public:
@@ -130,4 +130,4 @@ int main()
 
 	system("pause");
 	return 0;
-}
+}*/
