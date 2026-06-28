@@ -159,6 +159,7 @@
     <ClCompile Include="成员函数做友元.cpp" />
     <ClCompile Include="成员变量和成员函数是分开存储的.cpp" />
     <ClCompile Include="文件操作.cpp" />
+    <ClCompile Include="模板.cpp" />
     <ClCompile Include="点和圆之间的关系.cpp" />
     <ClCompile Include="纯虚函数和抽象类.cpp" />
     <ClCompile Include="纯虚函数练习.cpp" />

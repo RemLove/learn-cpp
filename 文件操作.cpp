@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include<fstream>
 void test01()
 {
@@ -12,4 +12,4 @@ int main()
 	system("chcp 65001");
 	test01();
 	system("pause");
-}
+}*/
