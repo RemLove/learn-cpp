@@ -144,6 +144,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="MyArray.cpp" />
+    <ClCompile Include="MyArrayTest.cpp" />
+    <ClCompile Include="MyArrayTest.hpp" />
     <ClCompile Include="new操作符.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Test.cpp" />
@@ -161,7 +164,7 @@
     <ClCompile Include="文件操作.cpp" />
     <ClCompile Include="模板.cpp" />
     <ClCompile Include="点和圆之间的关系.cpp" />
-    <ClCompile Include="类模板与继承.cpp" />
+    <ClCompile Include="类模板成员函数类外实现.cpp" />
     <ClCompile Include="类模板对象做函数参数.cpp" />
     <ClCompile Include="类模板的基本用法.cpp" />
     <ClCompile Include="纯虚函数和抽象类.cpp" />
@@ -175,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="MyArray.hpp" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

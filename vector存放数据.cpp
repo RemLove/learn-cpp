@@ -82,3 +82,65 @@ int main()
 	system("pause");
 	return 0;
 }*/
+
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+/*
+void test01()
+{
+	vector<int>v;
+	v.push_back(1);
+	v.push_back(2);
+	v.push_back(3);
+	
+	1.第一种遍历方式
+	vector<int>::iterator begin = v.begin();
+	vector<int>::iterator end = v.end();
+	while (begin != end)
+	{
+		cout << *begin << endl;
+		begin++;
+	}
+	第二种遍历方式
+	for (vector<int>::iterator p = v.begin(); p != v.end(); p++)
+	{
+		cout << *p << endl;
+	}
+}
+*/
+class Person
+{
+public:
+	Person(string name, int age)
+	{
+		this->m_name = name;
+		this->m_age = age;
+	}
+	string m_name;
+	int m_age;
+
+};
+//容器存放自定义类型
+void test02()
+{
+	vector<Person>v;
+	Person p1("王越", 18);
+	Person p2("越王", 18);
+	Person p3("Satella", 400);
+
+	v.push_back(p1);
+	v.push_back(p2);
+	v.push_back(p3);
+	for (vector<Person>::iterator begin = v.begin(); begin != v.end(); begin++)
+	{
+		cout << (*begin).m_name << " " << (*begin).m_age << endl;
+	}
+}
+int main()
+{
+	system("chcp 65001");
+	test02();
+	system("pause");
+}
