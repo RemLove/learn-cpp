@@ -93,6 +93,15 @@
     <ClCompile Include="模板.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="类模板的基本用法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="类模板对象做函数参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="类模板与继承.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h">

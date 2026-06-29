@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 template<typename T>
 //模板必须要确定T的数据类型才可以使用
@@ -82,4 +82,4 @@ int main()
 	test04();
 	system("pause");
 	return 0;
-}
+}*/
