@@ -149,6 +149,7 @@
     <ClCompile Include="MyArrayTest.hpp" />
     <ClCompile Include="new操作符.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="vector.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Test1.cpp" />
     <ClCompile Include="Test2.cpp" />

@@ -81,13 +81,8 @@ int main()
 	test03();
 	system("pause");
 	return 0;
-}*/
+}
 
-#include<iostream>
-#include<string>
-#include<vector>
-using namespace std;
-/*
 void test01()
 {
 	vector<int>v;
@@ -109,7 +104,7 @@ void test01()
 		cout << *p << endl;
 	}
 }
-*/
+
 class Person
 {
 public:
@@ -144,3 +139,41 @@ int main()
 	test02();
 	system("pause");
 }
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+//容器嵌套容器
+void test01()
+{
+	vector<vector<int>>v;
+	vector<int>v1;
+	vector<int>v2;
+	vector<int>v3;
+	v1.push_back(1);
+	v1.push_back(2);
+	v1.push_back(3);
+	v2.push_back(4);
+	v2.push_back(5);
+	v2.push_back(6);
+	v3.push_back(7);
+	v3.push_back(8);
+	v3.push_back(9);
+	v.push_back(v1);
+	v.push_back(v2);
+	v.push_back(v3);
+	for (vector<vector<int>>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		for (vector<int>::iterator vit = (*it).begin(); vit != (*it).end(); vit++)
+		{
+			cout << (*vit) << " ";
+		}
+		cout << endl;
+	}
+}
+int main()
+{
+	system("chcp 65001");
+	test01();
+	system("pause");
+}*/
