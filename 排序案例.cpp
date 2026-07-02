@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include<list>
 #include<string>
 using namespace std;
@@ -46,4 +46,4 @@ int main()
 	system("chcp 65001");
 	test01();
 	system("pause");
-}
+}*/

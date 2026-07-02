@@ -120,6 +120,9 @@
     <ClCompile Include="排序案例.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL案例二.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h">

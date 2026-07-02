@@ -150,6 +150,7 @@
     <ClCompile Include="new操作符.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="STL案例一：评委打分.cpp" />
+    <ClCompile Include="STL案例二.cpp" />
     <ClCompile Include="vector.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Test1.cpp" />
